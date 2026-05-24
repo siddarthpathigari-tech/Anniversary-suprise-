@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="passcode-screen" class="screen-container">
+        <div class="header">
+            <div class="polaroid-frame">
+                <img src="your-photo.jpg" alt="Us" id="main-photo">
+                <div class="accessory-bow">🎀</div>
+            </div>
+            <div class="bear-icon">🧸</div>
+        </div>
+        
+        <div class="keypad-container">
+            <p class="prompt">Entre a passcode</p>
+            <div class="dots-box">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="numpad">
+                <button onclick="add(1)">1</button><button onclick="add(2)">2</button><button onclick="add(3)">3</button>
+                <button onclick="add(4)">4</button><button onclick="add(5)">5</button><button onclick="add(6)">6</button>
+                <button onclick="add(7)">7</button><button onclick="add(8)">8</button><button onclick="add(9)">9</button>
+                <button onclick="del()">*</button><button onclick="add(0)">0</button><button onclick="check()">#</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="surprise-screen" class="screen-container hidden">
+        <div class="content-card">
+            <h1 class="main-title">Happy Anniversary! 💖</h1>
+            <div class="media-box">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnhicWF6M3R2NHBqbm5yc29idXVoeWV4NHI4eHh4eHh4eHh4eHh4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/v96zGf90V5l5v2mGvA/giphy.gif" alt="Celebration">
+            </div>
+            <p class="message">To the best person in my world. <br> May we stay like this forever! ✨</p>
+            <button class="action-btn" onclick="location.reload()">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
